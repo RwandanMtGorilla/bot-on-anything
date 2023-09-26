@@ -33,4 +33,8 @@ def create_bot(model_type):
         from model.google.bard_model import BardModel
         return BardModel()
 
+    elif model_type == const.MYMODEL:
+        from model.Mymodel.mymodel import mymodel
+        return mymodel()
+
     raise RuntimeError
